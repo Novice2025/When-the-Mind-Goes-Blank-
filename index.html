@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Diplomacy in Dialogue: Mind Goes Blank</title>
+    <!-- Chosen Palette: Dark Professional (Formal Blue and Calm Green for differentiation) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styling for Professional Feel */
+        :root {
+            --dark-bg: #141414;
+            --mid-bg: #1F1F1F;
+            --formal-blue: #3b82f6; /* Blue-500 */
+            --calm-green: #34D399; /* Green-400 */
+        }
+        body {
+            background-color: var(--dark-bg);
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+        }
+        .header-nav {
+            background-color: rgba(20, 20, 20, 0.95);
+        }
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .lesson-card {
+            background-color: var(--mid-bg);
+            border: 1px solid #333;
+            transition: transform 0.2s, box-shadow 0.3s;
+            border-radius: 0.75rem;
+        }
+        .lesson-card:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 30px rgba(52, 211, 153, 0.2); /* Calm Green Shadow */
+        }
+        .flow-core {
+            border: 3px solid var(--formal-blue);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+        }
+        .exercise-box {
+            border: 2px solid var(--calm-green);
+            background-color: #1a2a2a;
+        }
+        .phrase-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed #333;
+            display: flex;
+            flex-direction: column;
+        }
+        .phrase-list li:last-child {
+            border-bottom: none;
+        }
+        .phrase-list .expression {
+            font-weight: 600;
+            color: var(--formal-blue);
+            margin-bottom: 0.25rem;
+            display: block;
+            font-size: 1.1em;
+        }
+        .phrase-list .scenario {
+            font-style: italic;
+            color: #ccc;
+            font-size: 0.95em;
+        }
+        .portuguese-translation {
+            color: var(--calm-green);
+            font-weight: 500;
+            margin-left: 0.5rem;
+        }
+        /* New CSS for Animated Highlight (Blue focus) */
+        @keyframes pulse-glow {
+            0%, 100% {
+                text-shadow: 0 0 5px rgba(59, 130, 246, 0.4), 0 0 10px rgba(59, 130, 246, 0.1);
+                transform: scale(1);
+            }
+            50% {
+                text-shadow: 0 0 8px var(--formal-blue), 0 0 15px rgba(59, 130, 246, 0.5);
+                transform: scale(1.02);
+            }
+        }
+        .animated-term {
+            animation: pulse-glow 2s infinite alternate;
+            font-weight: 700;
+            color: var(--formal-blue);
+            display: inline-block;
+            margin: 0 0.5rem;
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.25rem;
+            background-color: rgba(59, 130, 246, 0.1);
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="header-nav sticky top-0 left-0 right-0 z-50 p-4 shadow-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-formal-blue font-poppins">DIPLOMACY IN DIALOGUE</h1>
+            <nav class="hidden sm:block">
+                <a href="#series-1" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">1. Revert</a>
+                <a href="#series-2" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">2. Research</a>
+                <a href="#series-3" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">3. Deflect</a>
+                <a href="#series-4" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">4. Informal</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20 pb-10">
+        <!-- HERO Section -->
+        <section class="max-w-7xl mx-auto px-4 mb-12">
+            <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                <div class="h-96 w-full bg-cover bg-center" style="background: linear-gradient(to bottom, rgba(20, 20, 20, 0.1) 0%, var(--dark-bg) 100%), url('https://placehold.co/1280x500/1F1F1F/FFFFFF?text=Handling+the+Unknown+Professionally');">
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <p class="text-xl font-medium text-gray-300 mb-2">Confidence Under Pressure | 24 Essential Phrases</p>
+                        <h2 class="hero-title text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight">
+                            When the Mind <span class="text-calm-green">Goes Blank</span>
+                        </h2>
+                        <p class="max-w-3xl text-lg text-gray-200">
+                            A curated list of phrases and strategies to professionally handle questions when you need time to check, research, or delegate the answer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 1: Immediate Follow-Up (Checking & Reverting) -->
+        <section id="series-1" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Series 1: Immediate Follow-Up (Checking & Reverting)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <div class="lesson-card p-6 rounded-xl flow-core">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Securing Time</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">Let me check on that / Let me check that. <span class="portuguese-translation">[Deixe-me verificar isso.]</span></span>
+                            <span class="scenario">*Sorry mate, I am not 100% sure of that. **Let me check on that and revert to you**.*</span>
+                        </li>
+                        <li>
+                            <span class="expression">Let me run a check on that. <span class="portuguese-translation">[Deixe-me fazer uma verificação rápida nisso.]</span></span>
+                            <span class="scenario">*I am afraid, **let me run a quick check on your machine to diagnose the problem**.*</span>
+                        </li>
+                        <li>
+                            <span class="expression">I’ll get back to you on that one. <span class="portuguese-translation">[Eu te retorno sobre isso.]</span></span>
+                            <span class="scenario">***I’ll get back to you on the new sales proposal**.*</span>
+                        </li>
+                        <li>
+                            <span class="expression">I’ll double check and let you know. <span class="portuguese-translation">[Vou verificar duas vezes e te informo.]</span></span>
+                            <span class="scenario">***I’ll double check and let you know**. Could you wait?*</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Commitment to Accuracy</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">I’ll find out and let you know. <span class="portuguese-translation">[Vou descobrir e te aviso.]</span></span>
+                            <span class="scenario">***It falls beyond my duty but I will find out and let you know**.*</span>
+                        </li>
+                        <li>
+                            <span class="expression">Let me find out for you. <span class="portuguese-translation">[Deixe-me descobrir por você.]</span></span>
+                            <span class="scenario">***I don't have this answer for now. Let me find out for you**.*</span>
+                        </li>
+                        <li>
+                            <span class="expression">I can find out for you. <span class="portuguese-translation">[Posso descobrir para você.]</span></span>
+                            <span class="scenario">***If you give me some time, I can find out for you**.*</span>
+                        </li>
+                         <li>
+                            <span class="expression">I want to be sure and give you the correct information. Let me check. <span class="portuguese-translation">[Quero ter certeza de te dar a informação correta.]</span></span>
+                            <span class="scenario">*(Use this concise line to emphasize accuracy over speed.)*</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 2: Research & Investigation (Formal & Measured) -->
+        <section id="series-2" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Series 2: Research & Investigation (Formal & Measured)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <div class="lesson-card p-6 rounded-xl flow-core">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Acknowledging Depth</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">That requires a bit more research first. <span class="portuguese-translation">[Isso exige um pouco mais de pesquisa.]</span></span>
+                            <span class="scenario">***I can't really answer this question as this requires a bit more research first** to come to a better conclusion.*</span>
+                        </li>
+                        <li>
+                            <span class="expression">I’m going to investigate that further / I’m going to look into that matter further. <span class="portuguese-translation">[Vou investigar isso mais a fundo.]</span></span>
+                            <span class="scenario">***I can't really answer this question as I am going to investigate that further**.*</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Valuing the Inquiry</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">That’s a really good point / question, I’ll check / I’ll find out. <span class="portuguese-translation">[Ótimo ponto, vou verificar.]</span></span>
+                            <span class="scenario">***I shall be honest here that this' really a good point however, I will check and come back to you later**.*</span>
+                        </li>
+                        <li>
+                            <span class="expression">Let me look that up for you. <span class="portuguese-translation">[Deixe-me pesquisar isso para você.]</span></span>
+                            <span class="scenario">***Mum, do you understand what is < rhetorical >? No, **let me look that up for you**.*</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 3: Transferring/Limiting Scope (Deflection & Boundaries) -->
+        <section id="series-3" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Series 3: Transferring/Limiting Scope (Boundaries)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <div class="lesson-card p-6 rounded-xl flow-core">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Setting the Scope</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">I haven’t looked at that yet. <span class="portuguese-translation">[Ainda não olhei para isso.]</span></span>
+                            <span class="scenario">***Teacher, do you know why we make terrible mistakes? Sorry, but I haven't looked at that yet**.*</span>
+                        </li>
+                        <li>
+                            <span class="expression">I don’t have that information here right now. <span class="portuguese-translation">[Não tenho essa informação aqui agora.]</span></span>
+                            <span class="scenario">*(Used to explain the physical absence of data without suggesting ignorance.)*</span>
+                        </li>
+                        <li>
+                            <span class="expression">I haven’t had time to think that through yet. <span class="portuguese-translation">[Ainda não tive tempo de pensar nisso.]</span></span>
+                            <span class="scenario">*(Focuses on time management, not capability.)*</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Deflection and Delegation</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">That’s not my area of expertise, I’ll ask to (...). <span class="portuguese-translation">[Essa não é minha área, vou perguntar para...]</span></span>
+                            <span class="scenario">*(**That’s not my area of expertise**, I’ll ask to **Sarah in Finance**.)*</span>
+                        </li>
+                        <li>
+                            <span class="expression">I’m probably not the best / right person to ask for that information. <span class="portuguese-translation">[Eu provavelmente não sou a melhor pessoa para perguntar.]</span></span>
+                            <span class="scenario">*(A polite way to redirect the inquiry.)*</span>
+                        </li>
+                        <li>
+                            <span class="expression">There are several possible answers, I’ll need more information first. <span class="portuguese-translation">[Há várias respostas possíveis, preciso de mais informação.]</span></span>
+                            <span class="scenario">*(Used when the question is too broad or ambiguous.)*</span>
+                        </li>
+                        <li>
+                            <span class="expression">It could be one of many possibilities, I’ll look into it. <span class="portuguese-translation">[Pode ser uma de muitas possibilidades, vou investigar.]</span></span>
+                            <span class="scenario">*(Similar to the above, used when diagnosis is required.)*</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 4: Informal & Casual Admissions -->
+        <section id="series-4" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Series 4: Informal & Casual Admissions
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <div class="lesson-card p-6 rounded-xl flow-core">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Casual Honesty</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">I’m not 100% sure on that / I am not sure on that. <span class="portuguese-translation">[Não tenho 100% de certeza disso.]</span></span>
+                            <span class="scenario">***Sorry, I can't make 100% of this**. Perhaps, Science will evolve further and your question may be answered over time.*</span>
+                        </li>
+                         <li>
+                            <span class="expression">I can’t remember off the top of my head. I’ll get back to you on that. <span class="portuguese-translation">[Não me lembro de cabeça.]</span></span>
+                            <span class="scenario">*(Used to acknowledge the information is known but inaccessible immediately.)*</span>
+                        </li>
+                        <li>
+                            <span class="expression">I have been wondering the same thing! <span class="portuguese-translation">[Eu também tenho me perguntado isso!]</span></span>
+                            <span class="scenario">*(A friendly way to show empathy while admitting the unknown.)*</span>
+                        </li>
+                        <li>
+                            <span class="expression">Your guess is as good as mine. <span class="portuguese-translation">[Seu palpite é tão bom quanto o meu.]</span></span>
+                            <span class="scenario">***Wow! I think that your guess is as good as mine** when you presented the facts.*</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-calm-green font-poppins">Very Informal (Use with Caution)</h4>
+                    <ul class="phrase-list text-white ml-2">
+                        <li>
+                            <span class="expression">I haven’t a clue / I haven’t got a clue. <span class="portuguese-translation">[Não tenho a menor ideia.]</span></span>
+                            <span class="scenario">***Sorry everyone, I haven't the faintest idea**.*</span>
+                        </li>
+                        <li>
+                            <span class="expression">Beats me / It beats me. <span class="portuguese-translation">[Me supera / Não faço ideia.]</span></span>
+                            <span class="scenario">***It beats me** how she got the job.*</span>
+                        </li>
+                        <li>
+                            <span class="expression">Who knows? (Rhetorical question). <span class="portuguese-translation">[Quem sabe?]</span></span>
+                            <span class="scenario">***God was a man. Who knows?** (Rhetorical = speech or writing intended to be effective and influence people.)*</span>
+                        </li>
+                        <li>
+                            <span class="expression">Take a guess. <span class="portuguese-translation">[Arrisque um palpite.]</span></span>
+                            <span class="scenario">***I rather take a guess here** as the sales trend is fluctuated every day.*</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Review Section (Animated Highlight) -->
+        <section id="final-review" class="max-w-7xl mx-auto px-4 my-10">
+            <h3 class="text-2xl font-bold text-formal-blue text-center mb-6">
+                Most Professional Responses
+            </h3>
+            <div class="bg-gray-800 p-8 rounded-xl shadow-xl text-center">
+                <p class="text-xl text-white">
+                    Use these phrases to maintain credibility while delaying a response:
+                </p>
+                <div class="mt-6 flex flex-wrap justify-center gap-4">
+                    <span class="animated-term">That requires a bit more research first</span>
+                    <span class="animated-term">I'll get back to you on that one</span>
+                    <span class="animated-term">That's not my area of expertise</span>
+                    <span class="animated-term">Let me check that and revert to you</span>
+                    <span class="animated-term">I want to be sure and give you the correct information</span>
+                    <span class="animated-term">I'll double check and let you know</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consolidation Exercise -->
+        <section id="exercise" class="max-w-4xl mx-auto px-4 my-16">
+            <h3 class="text-4xl font-bold mb-6 text-center border-b-2 border-calm-green pb-2 text-calm-green">
+                Practice: Handling a Tough Client Question
+            </h3>
+              <p class="text-gray-400 text-center mb-8">
+                A client asks you a complex technical question about a system you only manage the front-end of. Write a professional response using phrases from Series 2 and 3.
+            </p>
+            <div class="exercise-box p-8 rounded-xl shadow-2xl">
+                <textarea class="w-full h-32 p-3 rounded bg-gray-700 text-white border border-gray-600 focus:ring-calm-green focus:border-calm-green" placeholder="That's an excellent question, but the root cause lies in the back-end architecture..."></textarea>
+            </div>
+        </section>
+
+        <!-- Summary Zone -->
+        <section id="summary" class="max-w-xl mx-auto px-4 my-16 text-center">
+            <div class="p-8 rounded-xl bg-calm-green bg-opacity-20 border-2 border-calm-green shadow-lg">
+                <h3 class="text-3xl font-bold text-green-400 mb-4 font-poppins">
+                    FINAL WORD | The Power of Diplomacy
+                </h3>
+                <p class="text-lg text-gray-200 max-w-3xl mx-auto">
+                    A professional never says "I don't know." They say "I will find out." Use these phrases to demonstrate competence, diligence, and accountability.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800 mt-10">
+        @ Daby - Professional Development
+    </footer>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+
+        // Boilerplate code to initialize Firebase/Auth as required by the environment.
+        const initializeFirebase = async () => {
+            try {
+                // Ensure variables are defined, even if the runtime environment doesn't provide them
+                const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+                const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+                if (firebaseConfig) {
+                    const app = initializeApp(firebaseConfig);
+                    const auth = getAuth(app);
+
+                    if (initialAuthToken) {
+                        console.log("Firebase: Signing in with custom token...");
+                        await signInWithCustomToken(auth, initialAuthToken);
+                    } else {
+                        console.log("Firebase: Signing in anonymously (no custom token provided)...");
+                        await signInAnonymously(auth);
+                    }
+                    console.log("Firebase initialized and authenticated successfully.");
+                } else {
+                    console.error("Firebase: Configuration not available. Skipping initialization.");
+                }
+            } catch (error) {
+                console.error("Firebase init error:", error);
+            }
+        };
+        // Initialize Firebase when the window loads
+        window.onload = initializeFirebase;
+    </script>
+</body>
+</html>
